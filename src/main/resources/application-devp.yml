@@ -1,0 +1,18 @@
+port: 1000
+
+driver:
+  class:
+    name: com.mysql.jdbc.Driver
+
+datasource:
+  url: jdbc:mysql://127.0.0.1:3306/monitor?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+  username: root
+  password: Sqzl1234
+  type: com.alibaba.druid.pool.DruidDataSource
+  dbcp2:
+    min-idle: 1
+    max-idle: 2
+    initial-size: 1
+    time-between-eviction-runs-millis: 3000
+    min-evictable-idle-time-millis: 30000
+    validation-query: SELECT "ZTM" FROM DUAL

@@ -1,0 +1,26 @@
+server:
+  port: ${port}
+  servlet:
+    context-path: /springboot
+
+spring:
+  profiles:
+    active: devp
+  datasource:
+    driver-class-name: ${driver.class.name}
+    url: ${datasource.url}
+    username: ${datasource.username}
+    password: ${datasource.password}
+    type: ${datasource.type}
+    dbcp2:
+      min-idle: ${datasource.dbcp2.min-idle}
+      max-idle: ${datasource.dbcp2.max-idle}
+      initial-size: ${datasource.dbcp2.initial-size}
+      time-between-eviction-runs-millis: ${datasource.dbcp2.time-between-eviction-runs-millis}
+      min-evictable-idle-time-millis: ${datasource.dbcp2.min-evictable-idle-time-millis}
+      validation-query: ${datasource.dbcp2.validation-query}
+
+  logging:
+    config: classpath:log4j.xml
+
+
