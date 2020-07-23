@@ -7,7 +7,7 @@ driver:
 datasource:
   url: jdbc:mysql://127.0.0.1:3306/monitor?useUnicode=true&characterEncoding=UTF-8&useSSL=false
   username: root
-  password: Sqzl1234
+  password: password
   type: com.alibaba.druid.pool.DruidDataSource
   dbcp2:
     min-idle: 1

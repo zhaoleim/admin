@@ -1,9 +1,9 @@
-package com.admin.springboot.adminEntity;
+package com.admin.springboot.adminVO;
 
 import lombok.Data;
 
 @Data
-public class UserEntity {
+public class UserVo {
     private String id;
     private String name;
 }
