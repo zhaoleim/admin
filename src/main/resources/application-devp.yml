@@ -16,3 +16,20 @@ datasource:
     time-between-eviction-runs-millis: 3000
     min-evictable-idle-time-millis: 30000
     validation-query: SELECT "ZTM" FROM DUAL
+
+redis:
+  #连接池
+  jedis:
+    pool:
+      #最大连接个数
+    max-active: 10
+      #等待时间
+    max-wait: 6000ms
+      #最大空闲
+    max-idle: 8
+      #初始化最小
+    min-idle: 5
+      #操作第几个库
+    database: 1
+    #redis路径
+    host: 192.168.40.134
